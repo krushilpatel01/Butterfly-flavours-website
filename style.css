@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #ffffff;
+    /* Keeping color scheme */
+    color: #334155;
+
+}
+
+:root {
+    --primary-color: #20856F;
+    --secondary-color: #334155;
+    --font-family: 'Lato', sans-serif;
+    --font-weight-bold: 700;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar img {
+    width: 15%;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #20856F !important;
+}
+
+
+/* carousal */
+.carousel-item {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity here */
+}
+
+.carousel-caption {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* about section */
+.butterfly-about {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.business-detail {
+    padding: 40px 0px;
+}
+
+.business-detail p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.business-detail h1 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.business-logo {
+    overflow: hidden;
+    background-color: #20856F;
+    padding-top: 15px;
+}
+
+.business-logo:hover {
+    background-color: white;
+    transition: 0.5s all ease-in-out;
+}
+
+.business-logo img {
+    width: 100%;
+}
+
+
+/* specialized section */
+.main-title {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.main-title h2 {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+}
+
+.industry {
+    position: relative;
+    height: 400px;
+}
+
+.industry img {
+    width: 100px;
+}
+
+.industry .industry-detail {
+    margin-top: 10px;
+    z-index: 0;
+    position: relative;
+    text-align: center;
+}
+
+.industry-detail .i-name {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    background-color: white;
+    padding: 30px 10px;
+    font-size: 22px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    z-index: 2;
+}
+
+.industry-detail .i-description {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    z-index: 1;
+}
+
+.industry-detail:hover .i-description {
+    visibility: visible;
+    opacity: 1;
+    top: 100px;
+}
+
+/* people-know-about */
+
+.people-know-about {
+    background-image: url('https://images.unsplash.com/photo-1517476072926-bce26e54610f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    padding: 80px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accordion-item {
+    border: 2px solid white;
+    background-color: transparent !important;
+}
+
+.accordion-button {
+    border-bottom: 2px solid white;
+    background-color: transparent !important;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: transparent !important;
+    color: white;
+}
+
+
+/* filterabel gallery */
+.gallery-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0px 10px;
+}
+
+.filter-btn {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: #046bd2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #034a92;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    width: 30%;
+    display: none;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.show {
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
+
+
+/* blog section */
+.blog-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #046bd2;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+/* contact-form and testmonials */
+
+
+
+/* footer css */
+
+.footer {
+    background-color: #111111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.footer_menu ul li {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.footer_menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-main {
+    background-color: #374a5e;
+    padding: 40px 0px;
+}
+
+.footer-logo img {
+    width: 50%;
+}
+
+.footer_contact {
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+.footer_contact .footer_icons {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_contact .footer_icons li {
+    width: 20px;
+    margin: 0px 10px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Image Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-container {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        .filter-btn {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            background: #046bd2;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #034a92;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            width: 30%;
+            display: none;
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery-item p {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <button class="filter-btn active" onclick="filterGallery('all')">Show All</button>
+        <button class="filter-btn" onclick="filterGallery('nature')">Nature</button>
+        <button class="filter-btn" onclick="filterGallery('architecture')">Architecture</button>
+        <button class="filter-btn" onclick="filterGallery('animals')">Animals</button>
+
+        <div class="gallery">
+            <div class="gallery-item nature show">
+                <img src="image1.jpg" alt="Nature 1">
+                <p>Nature Image 1</p>
+            </div>
+            <div class="gallery-item nature show">
+                <img src="image2.jpg" alt="Nature 2">
+                <p>Nature Image 2</p>
+            </div>
+            <div class="gallery-item architecture show">
+                <img src="image3.jpg" alt="Architecture 1">
+                <p>Architecture Image 1</p>
+            </div>
+            <div class="gallery-item architecture show">
+                <img src="image4.jpg" alt="Architecture 2">
+                <p>Architecture Image 2</p>
+            </div>
+            <div class="gallery-item animals show">
+                <img src="image5.jpg" alt="Animal 1">
+                <p>Animal Image 1</p>
+            </div>
+            <div class="gallery-item animals show">
+                <img src="image6.jpg" alt="Animal 2">
+                <p>Animal Image 2</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterGallery(category) {
+            let items = document.querySelectorAll('.gallery-item');
+            let buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            if (category === 'all') {
+                items.forEach(item => item.classList.add('show'));
+            } else {
+                items.forEach(item => {
+                    if (item.classList.contains(category)) {
+                        item.classList.add('show');
+                    } else {
+                        item.classList.remove('show');
+                    }
+                });
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterfly - Bootstrap Version</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" class="img-fluid"></a>
+
+            <!-- Laptop Menu -->
+            <div class="d-none d-lg-block">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler d-lg-none border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu (Right-Side) -->
+    <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- sliders for website -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="background-color: rgba(0, 0, 0, 0.9); background-image: url('https://images.unsplash.com/photo-1566932521009-a726ce64e092?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h2>Backery Flavours</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa laborum incidunt tempore vero
+                        veritatis ea.</p>
+                    <a href="#" class="btn" style="background-color: #20856F; color: white;">View More</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('https://images.unsplash.com/photo-1473425990767-8324e48b48b5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h2>Softdrinks Flavours</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, magnam repellat illo nam quod
+                        voluptate!</p>
+                    <a href="#" class="btn" style="background-color: #20856F; color: white;">view More</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('https://plus.unsplash.com/premium_photo-1663127123513-a11369f67c8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h2>Dairy Flavours</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam veritatis, corrupti minus
+                        saepe perspiciatis.</p>
+                    <a href="#" class="btn" style="background-color: #20856F; color: white;">view More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- website about sections -->
+    <section class="butterfly-about">
+        <div class="container row">
+            <div class="col-sm-12 col-lg-8 business-detail">
+                <p>Welcome to Our Company...</p>
+                <h1>Dayalal Velji & Sons Butterfly Flavour</h1>
+                <p style="color: rgb(128, 128, 128);">Dayalal Velji & Sons, Manufacturers of Butterfly Brand Flavouring
+                    Essences since 45 years in this
+                    filed. Butterfly Flavour India’s leading high quality flavors of natural products entirely suited to
+                    consumer tastes and customized application requirements Bakery, Beverage, Dairy, Pharma,
+                    Confectionery flavours. Our motto is to offer complete satisfaction to the clients with its products
+                    and services. We specialize not in customary flavours but also tailor made flavours.</p>
+                <button type="submit" class="btn" style="background-color: #20856F; color: white;">Check More</button>
+            </div>
+            <div class="col-sm-12 col-lg-4 business-logo"><img src="logo.png" alt="Butterfly logo" srcset=""></div>
+        </div>
+    </section>
+
+
+    <!-- specialized in industry section-->
+    <section class="specialized-industry">
+        <div class="container">
+            <div class="row main-title">
+                <div class="col-12">
+                    <h2>We are specialized in this industry</h2>
+                </div>
+            </div>
+            <div class="row industry-items">
+                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                    <img src="2.png" alt="" srcset="">
+                    <div class="industry-detail">
+                        <h2 class="i-name">Backery Flavours</h2>
+                        <div class="i-description">
+                            <p class="i-desc">Accusan enim ipsam voluptam quia voluptas sit aspern odit aut sed quia
+                                consequnt.</p>
+                            <div class="more-btn"><button type="submit"
+                                    style="background-color: #20856F; color: white; padding: 7px 10px; border: none; border-radius: 10px;">View
+                                    More</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                    <img src="3.png" alt="" srcset="">
+                    <div class="industry-detail">
+                        <h2 class="i-name">Softdrink Flavours</h2>
+                        <div class="i-description">
+                            <p class="i-desc">Accusan enim ipsam voluptam quia voluptas sit aspern odit aut sed quia
+                                consequnt.</p>
+                            <div class="more-btn"><button type="submit"
+                                    style="background-color: #20856F; color: white; padding: 7px 10px; border: none; border-radius: 10px;">View
+                                    More</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                    <img src="4.png" alt="" srcset="">
+                    <div class="industry-detail">
+                        <h2 class="i-name">Dairy Flavours</h2>
+                        <div class="i-description">
+                            <p class="i-desc">Accusan enim ipsam voluptam quia voluptas sit aspern odit aut sed quia
+                                consequnt.</p>
+                            <div class="more-btn"><button type="submit"
+                                    style="background-color: #20856F; color: white; padding: 7px 10px; border: none; border-radius: 10px;">View
+                                    More</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                    <img src="5.png" alt="" srcset="">
+                    <div class="industry-detail">
+                        <h2 class="i-name">Pharmacuticals Flavours</h2>
+                        <div class="i-description">
+                            <p class="i-desc">Accusan enim ipsam voluptam quia voluptas sit aspern odit aut sed quia
+                                consequnt.</p>
+                            <div class="more-btn"><button type="submit"
+                                    style="background-color: #20856F; color: white; padding: 7px 10px; border: none; border-radius: 10px;">View
+                                    More</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- what-people-know about us -->
+    <section class="people-know-about">
+        <div class="container">
+            <div class="row main-title">
+                <div class="col-12">
+                    <h2 style="color: white;">What People Know About us!</h2>
+                </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Who are we?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We are Dayalal Velji & Sons, a trusted manufacturer of high-quality flavouring essences and
+                            food colors under the brand Butterfly Flavours. With over 45 years of expertise, we
+                            specialize in delivering premium food additives that enhance taste, aroma, and visual
+                            appeal.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What products do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We offer a wide range of food flavors, food colors, and other food additives for various
+                            industries, including:
+                            <br><br>
+                            - Bakery & Confectionery
+                            <br>
+                            - Dairy & Ice Cream
+                            <br>
+                            - Beverages
+                            <br>
+                            - Pharmaceuticals
+                            <br>
+                            - Savory & Snacks
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Why choose Butterfly Flavours?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            1). 45+ years of experience in flavor manufacturing
+                            <br>
+                            2). High-quality ingredients that meet international standards
+                            <br>
+                            3). Strict quality control and hygiene measures
+                            <br>
+                            4). Customized flavors tailored to customer requirements
+                            <br>
+                            5). Compliance with National & International regulations
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I order in bulk for my business?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Absolutely! We cater to both B2B (business-to-business) and bulk orders for food
+                            manufacturers, bakeries, restaurants, and other industries. Contact us for bulk pricing and
+                            special deals.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- filterable gallery section -->
+    <section class="Filterable-gallery">
+        <div class="gallery-container">
+            <button class="filter-btn active" onclick="filterGallery('all')">Show All</button>
+            <button class="filter-btn" onclick="filterGallery('even')">Even Images</button>
+            <button class="filter-btn" onclick="filterGallery('odd')">Odd Images</button>
+            <button class="filter-btn" onclick="filterGallery('animals')">No Images</button>
+
+            <div class="gallery">
+                <div class="gallery-item nature show">
+                    <img src="images/gllery-1.png" alt="Nature 1">
+                    <p>Image 1</p>
+                </div>
+                <div class="gallery-item even show">
+                    <img src="images/gllery-4.png" alt="Nature 2">
+                    <p>Image 2</p>
+                </div>
+                <div class="gallery-item odd show">
+                    <img src="images/gllery-6.png" alt="Architecture 1">
+                    <p>Image 3</p>
+                </div>
+                <div class="gallery-item even show">
+                    <img src="images/gllery-7.png" alt="Architecture 2">
+                    <p>Image 4</p>
+                </div>
+                <div class="gallery-item odd show">
+                    <img src="images/gllery-8.png" alt="Animal 1">
+                    <p>Animal Image 5</p>
+                </div>
+                <div class="gallery-item even show">
+                    <img src="images/gllery-9.png" alt="Animal 2">
+                    <p>Image 6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- blog grids -->
+    <section class="blog-section">
+        <div class="container py-5">
+            <div class="row main-title">
+                <div class="col-12">
+                    <h2>We are specialized in this industry</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog (1).jpeg" alt="Blog Image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Behind the Scenes: The Science of Food Additives</h3>
+                            <p class="blog-meta">By Admin | Jan 10, 2025</p>
+                            <p class="blog-description">A short summary of the blog post goes here...</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog (2).jpeg" alt="Blog Image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Food Colors & Their Impact: More Than Just Aesthetic</h3>
+                            <p class="blog-meta">By Admin | Jan 15, 2025</p>
+                            <p class="blog-description">A short summary of the blog post goes here...</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog (1).jpeg" alt="Blog Image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">The Art of Flavoring: How Food Essences Enhance Taste</h3>
+                            <p class="blog-meta">By Admin | Jan 20, 2025</p>
+                            <p class="blog-description">A short summary of the blog post goes here...</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-testomonials">
+        
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer pt-0 mt-4">
+        <div class="footer-main">
+            <div class="row container">
+                <div class="col-sm-12 col-lg-4 footer-logo">
+                    <img src="logo.png" alt="" srcset="">
+                    <p class="mt-2">Behind the word mountains, far from the countries Vokalia and Consonantia, there</p>
+                </div>
+                <div class="col-sm-12 col-lg-4 footer_menu">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Product</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-4 footer_contact">
+                    <h3>Subscribe Now</h3>
+                    <p>Don’t miss our future updates! Get Subscribed Today!</p>
+                    <ul class="footer_icons">
+                        <li><i class="fa-brands fa-facebook fa-xl"></i></li>
+                        <li><i class="fa-brands fa-square-twitter fa-xl"></i></li>
+                        <li><i class="fa-brands fa-linkedin fa-xl"></i></li>
+                        <li><i class="fa-brands fa-square-instagram fa-xl"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-4">
+            <p>&copy; 2025 Butterfly. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome cnd js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom js -->
+    <script>
+        function filterGallery(category) {
+            let items = document.querySelectorAll('.gallery-item');
+            let buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            if (category === 'all') {
+                items.forEach(item => item.classList.add('show'));
+            } else {
+                items.forEach(item => {
+                    if (item.classList.contains(category)) {
+                        item.classList.add('show');
+                    } else {
+                        item.classList.remove('show');
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
