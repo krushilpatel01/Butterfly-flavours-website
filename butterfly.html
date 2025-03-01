@@ -17,6 +17,10 @@
     <!-- swiper slider -->
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- animation wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 
 </head>
 
@@ -141,7 +145,7 @@
         <div class="container">
             <div class="row main-title">
                 <div class="col-12">
-                    <h2>We are specialized in this industry</h2>
+                    <h2 class="wow animate__animated animate__fadeInUp">We are specialized in this industry</h2>
                 </div>
             </div>
             <div class="row industry-items">
@@ -302,7 +306,7 @@
     <section class="Filterable-gallery pt-5" id="services">
         <div class="row main-title">
             <div class="col-12">
-                <h2>We Are Served This Industry</h2>
+                <h2 class="wow animate__animated animate__fadeInUp">We Are Served This Industry</h2>
             </div>
         </div>
         <div class="gallery-container">
@@ -548,7 +552,6 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
