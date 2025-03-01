@@ -10,12 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- swiper slider -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
     <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center flex-nowrap">
             <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" class="img-fluid"></a>
 
             <!-- Laptop Menu -->
@@ -24,6 +32,7 @@
                     <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -47,6 +56,7 @@
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -100,21 +110,28 @@
         </button>
     </div>
 
+    <!-- <div class="butterfly-about-indusrty"> -->
     <!-- website about sections -->
-    <section class="butterfly-about">
+    <section class="butterfly-about" id="about">
         <div class="container row">
-            <div class="col-sm-12 col-lg-8 business-detail">
+            <div class="col-sm-12 col-md-8 col-lg-8 business-detail px-3">
                 <p>Welcome to Our Company...</p>
                 <h1>Dayalal Velji & Sons Butterfly Flavour</h1>
-                <p style="color: rgb(128, 128, 128);">Dayalal Velji & Sons, Manufacturers of Butterfly Brand Flavouring
+                <p style="color: rgb(128, 128, 128); text-align: justify;">Dayalal Velji & Sons, Manufacturers of
+                    Butterfly Brand
+                    Flavouring
                     Essences since 45 years in this
-                    filed. Butterfly Flavour India’s leading high quality flavors of natural products entirely suited to
+                    filed. Butterfly Flavour India’s leading high quality flavors of natural products entirely
+                    suited to
                     consumer tastes and customized application requirements Bakery, Beverage, Dairy, Pharma,
-                    Confectionery flavours. Our motto is to offer complete satisfaction to the clients with its products
+                    Confectionery flavours. Our motto is to offer complete satisfaction to the clients with its
+                    products
                     and services. We specialize not in customary flavours but also tailor made flavours.</p>
-                <button type="submit" class="btn" style="background-color: #20856F; color: white;">Check More</button>
+                <button type="submit" class="btn" style="background-color: #20856F; color: white;">Check
+                    More</button>
             </div>
-            <div class="col-sm-12 col-lg-4 business-logo"><img src="logo.png" alt="Butterfly logo" srcset=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-4 business-logo"><img src="logo.png" alt="Butterfly logo" srcset="">
+            </div>
         </div>
     </section>
 
@@ -128,7 +145,7 @@
                 </div>
             </div>
             <div class="row industry-items">
-                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                <div class="col-sm-12 col-md-6 col-lg-3 mx-o my-auto text-center industry">
                     <img src="2.png" alt="" srcset="">
                     <div class="industry-detail">
                         <h2 class="i-name">Backery Flavours</h2>
@@ -141,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                <div class="col-sm-12 col-md-6 col-lg-3 mx-o my-auto text-center industry">
                     <img src="3.png" alt="" srcset="">
                     <div class="industry-detail">
                         <h2 class="i-name">Softdrink Flavours</h2>
@@ -154,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                <div class="col-sm-12 col-md-6 col-lg-3 mx-o my-auto text-center industry">
                     <img src="4.png" alt="" srcset="">
                     <div class="industry-detail">
                         <h2 class="i-name">Dairy Flavours</h2>
@@ -167,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-3 mx-o my-auto text-center industry">
+                <div class="col-sm-12 col-md-6 col-lg-3 mx-o my-auto text-center industry">
                     <img src="5.png" alt="" srcset="">
                     <div class="industry-detail">
                         <h2 class="i-name">Pharmacuticals Flavours</h2>
@@ -183,6 +200,7 @@
             </div>
         </div>
     </section>
+    <!-- </div> -->
 
 
     <!-- what-people-know about us -->
@@ -281,15 +299,20 @@
 
 
     <!-- filterable gallery section -->
-    <section class="Filterable-gallery">
+    <section class="Filterable-gallery pt-5" id="services">
+        <div class="row main-title">
+            <div class="col-12">
+                <h2>We Are Served This Industry</h2>
+            </div>
+        </div>
         <div class="gallery-container">
             <button class="filter-btn active" onclick="filterGallery('all')">Show All</button>
-            <button class="filter-btn" onclick="filterGallery('even')">Even Images</button>
-            <button class="filter-btn" onclick="filterGallery('odd')">Odd Images</button>
-            <button class="filter-btn" onclick="filterGallery('animals')">No Images</button>
+            <button class="filter-btn" onclick="filterGallery('even')">Bakery Products</button>
+            <button class="filter-btn" onclick="filterGallery('odd')">Dairy Products</button>
+            <button class="filter-btn" onclick="filterGallery('animals')">Soft Drink Products</button>
 
             <div class="gallery">
-                <div class="gallery-item nature show">
+                <div class="gallery-item even show">
                     <img src="images/gllery-1.png" alt="Nature 1">
                     <p>Image 1</p>
                 </div>
@@ -297,19 +320,19 @@
                     <img src="images/gllery-4.png" alt="Nature 2">
                     <p>Image 2</p>
                 </div>
-                <div class="gallery-item odd show">
+                <div class="gallery-item animals show">
                     <img src="images/gllery-6.png" alt="Architecture 1">
                     <p>Image 3</p>
                 </div>
-                <div class="gallery-item even show">
+                <div class="gallery-item animals show">
                     <img src="images/gllery-7.png" alt="Architecture 2">
                     <p>Image 4</p>
                 </div>
-                <div class="gallery-item odd show">
+                <div class="gallery-item animals show">
                     <img src="images/gllery-8.png" alt="Animal 1">
                     <p>Animal Image 5</p>
                 </div>
-                <div class="gallery-item even show">
+                <div class="gallery-item odd show">
                     <img src="images/gllery-9.png" alt="Animal 2">
                     <p>Image 6</p>
                 </div>
@@ -319,15 +342,15 @@
 
 
     <!-- blog grids -->
-    <section class="blog-section">
-        <div class="container py-5">
+    <section class="blog-section py-5" id="blog">
+        <div class="container">
             <div class="row main-title">
                 <div class="col-12">
-                    <h2>We are specialized in this industry</h2>
+                    <h2>Our Latest Blog</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3">
                     <div class="blog-card">
                         <img src="images/blog (1).jpeg" alt="Blog Image">
                         <div class="blog-content">
@@ -338,7 +361,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3">
                     <div class="blog-card">
                         <img src="images/blog (2).jpeg" alt="Blog Image">
                         <div class="blog-content">
@@ -349,7 +372,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 my-3">
                     <div class="blog-card">
                         <img src="images/blog (1).jpeg" alt="Blog Image">
                         <div class="blog-content">
@@ -365,8 +388,77 @@
     </section>
 
 
-    <section class="contact-testomonials">
-        
+    <section class="contact-testomonials" id="contact">
+        <div class="container">
+            <div class="row d-flex reverse-mobile">
+                <div class="col-sm-12 mt-5 col-lg-4 contact-form">
+                    <div class="row main-title2 mb-4">
+                        <div class="col-12">
+                            <h2 class="title-contact2">Contact Us</h2>
+                            <p>Let us know how to get back to you.</p>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <form action="">
+                        <label for="name">Full Name</label>
+                        <br>
+                        <input type="text" name="Enter Full Name" id="">
+                        <br>
+                        <label for="email">Email Address</label>
+                        <br>
+                        <input type="email" name="Add Your Email here" id="">
+                        <br>
+                        <label for="message">Enter Message Here</label>
+                        <br>
+                        <input type="text" name="Add Text" id="">
+                        <br>
+                        <br>
+                        <button type="submit" class="btn" style="background-color: #20856F; color: white;">Send
+                            Message</button>
+                    </form>
+                </div>
+                <div class="col-sm-12 mt-3 col-lg-8 testomonials">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-box">
+                                    <img src="https://ai-analytics.wharton.upenn.edu/wp-content/uploads/2023/10/Paul-Sabin-300px.png"
+                                        alt="" srcset="">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum magnam vitae totam
+                                        nihil nulla, laudantium quibusdam quidem. Tempora, officia omnis.</p>
+                                    <h3>Dorothy Morries</h3>
+                                    <h2>Model</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-box">
+                                    <img src="https://ai-analytics.wharton.upenn.edu/wp-content/uploads/2023/10/Paul-Sabin-300px.png"
+                                        alt="" srcset="">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum magnam vitae totam
+                                        nihil nulla, laudantium quibusdam quidem. Tempora, officia omnis.</p>
+                                    <h3>Dorothy Morries</h3>
+                                    <h2>Model</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-box">
+                                    <img src="https://ai-analytics.wharton.upenn.edu/wp-content/uploads/2023/10/Paul-Sabin-300px.png"
+                                        alt="" srcset="">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum magnam vitae totam
+                                        nihil nulla, laudantium quibusdam quidem. Tempora, officia omnis.</p>
+                                    <h3>Dorothy Morries</h3>
+                                    <h2>Model</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
@@ -374,11 +466,11 @@
     <footer class="footer pt-0 mt-4">
         <div class="footer-main">
             <div class="row container">
-                <div class="col-sm-12 col-lg-4 footer-logo">
+                <div class="col-sm-12 col-md-4 col-lg-4 footer-logo py-3">
                     <img src="logo.png" alt="" srcset="">
                     <p class="mt-2">Behind the word mountains, far from the countries Vokalia and Consonantia, there</p>
                 </div>
-                <div class="col-sm-12 col-lg-4 footer_menu">
+                <div class="col-sm-12 col-md-4 col-lg-4 footer_menu py-3">
                     <h3>Useful Links</h3>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -388,7 +480,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-lg-4 footer_contact">
+                <div class="col-sm-12 col-md-4 col-lg-4 footer_contact py-3">
                     <h3>Subscribe Now</h3>
                     <p>Don’t miss our future updates! Get Subscribed Today!</p>
                     <ul class="footer_icons">
@@ -404,6 +496,10 @@
             <p>&copy; 2025 Butterfly. All Rights Reserved.</p>
         </div>
     </footer>
+
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" class="scroll-top-btn">↑</button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- fontawesome cnd js file -->
@@ -432,6 +528,35 @@
                 });
             }
         }
+
+        // Show the button when user scrolls down
+        window.onscroll = function () {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Function to smoothly scroll to the top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
 

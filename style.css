@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #ffffff;
     /* Keeping color scheme */
@@ -67,6 +71,11 @@ body {
     color: white;
     padding: 20px;
     border-radius: 5px;
+}
+
+.butterfly-about-indusrty {
+    width: 100%;
+    height: 100vh;
 }
 
 /* about section */
@@ -202,6 +211,11 @@ body {
 
 
 /* filterabel gallery */
+.Filterable-gallery {
+    width: 100%;
+    /* height: 100vh; */
+}
+
 .gallery-container {
     text-align: center;
     margin: 20px auto;
@@ -211,17 +225,17 @@ body {
 
 .filter-btn {
     margin: 5px;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border: none;
-    background: #046bd2;
-    color: white;
-    border-radius: 5px;
+    background: transparent;
+    color: black;
     cursor: pointer;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: #034a92;
+    background: #000000;
+    color: white;
 }
 
 .gallery {
@@ -317,8 +331,106 @@ body {
 
 
 /* contact-form and testmonials */
+.contact-testomonials {
+    padding: 50px 0px;
+}
+
+.contact-form {
+    padding: 0px 20px;
+}
+
+.main-title2 {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.title-contact2 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.main-title2 form {
+    width: 100%;
+}
+
+.contact-form form label {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact-form form input {
+    width: 100%;
+    padding: 5px 0px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+
+    /* Apply only on mobile screens */
+    .reverse-mobile {
+        flex-direction: column-reverse !important;
+    }
+}
 
 
+/* swiper slider */
+.testomonials {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/020/086/340/large_2x/top-view-fresh-bread-brown-raisins-sesame-bakery-made-from-wheat-flour-food-homemade-suitable-for-healthy-eating-on-wooden-table-floor-black-rustic-dark-background-free-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.swiper-slide .slide-box {
+    width: 70%;
+    margin: 10% auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide-box img {
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+}
+
+.slide-box p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.slide-box h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.slide-box h2 {
+    font-size: 18px;
+    font-family: 600;
+}
 
 /* footer css */
 
@@ -359,7 +471,7 @@ body {
 }
 
 .footer_contact {
-    width: 33.33%;
+    /* width: 33.33%; */
     margin: 0 auto;
 }
 
@@ -373,4 +485,29 @@ body {
 .footer_contact .footer_icons li {
     width: 20px;
     margin: 0px 10px;
+}
+
+
+/* scroll icon */
+/* Scroll to Top Button */
+.scroll-top-btn {
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #20856F;
+    color: white;
+    border: 1px solid #186953;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    /* Initially hidden */
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-top-btn:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
 }
